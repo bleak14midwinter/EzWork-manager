@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Fav-icons -->
+     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+      <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+     <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+     <link rel="stylesheet" href="css/form.css">
+
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div class=" sign-box ">
+        <div class="sign-content">
+            <a href="index.html" class="main-logo "><i class="fas fa-handshake"></i>EzWork
+            </a>
+            <main class="main">
+                <h3 class="main-title  ">Start your journey with us</h3>
+                <p class="main-text">Welcome to <strong>EzWork</strong>, Where Success Finds You! Join now for
+                    exclusive benefits and
+                    effortless progress.</p>
+            </main>
+
+            <div class="boss-message">
+                <p class="boss-qoute">"I'm thrilled to share my best project! After nurturing the idea, I'm proud to see it come to life.
+                    Dive in and enjoy!"</p>
+                <div class="boss-info">
+                    <img src="img/boss.jpg" class="boss-img" alt="">
+                    <div class="info-text">
+                        <p class="boss-name">Hisham Rabea</p>
+                        <p class="boss-title">Founder and CEO</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="form ">
+            <header class="form-title">
+                <p class="title">Let's get started</p>
+            </header>
+            <div class="input-field ">
+                <div class="field  ">
+                <i class="fa-solid fa-user input-icon "></i>
+                <input type="text" id="name" name="fullName" placeholder="Name" required maxlength="31">
+                <i class="fa-solid fa-circle-exclamation verfy-icon error-icon "></i>
+                <i class="fa-solid fa-circle-check verfy-icon success-icon"></i>
+            </div>
+            <small>Error Message</small>
+            </div>
+        <div class="input-field  ">
+            <div class="field ">
+                <i class="fa-solid fa-envelope input-icon"></i>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <i class="fa-solid fa-circle-exclamation verfy-icon error-icon "></i>
+                <i class="fa-solid fa-circle-check verfy-icon success-icon"></i>
+            </div>
+            <small>Error Message</small>
+        </div>
+        <div class="input-field">
+            <div class="field ">
+                <i class="fa-solid fa-lock input-icon"></i>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <i class="fa-solid fa-circle-exclamation verfy-icon error-icon "></i>
+                <i class="fa-solid fa-circle-check verfy-icon success-icon"></i>
+                <div id="password-strength"></div>
+            </div>
+            <small>Error Message</small>
+
+            </div>
+            <div class="input-field">
+                <div class="field ">
+                <i class="fa-solid fa-lock input-icon"></i>
+                <input type="password" id="confirm-password" name="password" placeholder="Confirm Password" required>
+                <i class="fa-solid fa-circle-exclamation verfy-icon error-icon "></i>
+                <i class="fa-solid fa-circle-check verfy-icon success-icon"></i>
+                <div id="password-strength"></div>
+            </div>
+            <small>Error Message</small>
+            </div>
+             <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="termsCheckbox" required>
+                <label class="form-check-label" for="termsCheckbox">
+                    I agree to the <a href="#">Terms and Conditions</a>
+                </label>
+            </div>
+            <div class="btn-field">
+                <input type="submit" id="signUp" value="Create Account" class="my-btn ">
+                <p>Already have an account? <a id="sign-up-btn" href="signIn.html">Sign In</a></p>
+            </div>
+        </div>
+    </div>
+ 
+
+    <script src="js/signUpModule.js"></script>
+</body>
+
+</html>
+
+
+<!--  -->

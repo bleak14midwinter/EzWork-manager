@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  /* background-color: #f1f5f9; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+  background-image: linear-gradient(
+      rgba(30, 64, 175, 0.4),
+      rgba(30, 64, 175, 0.4)
+    ),
+    url("../img/welcome.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ }
+ html {
+  font-size: 62.5%;
+   
+}
+a {
+  text-decoration: none !important;
+}
+.main-title {
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+  font-size: 3.6rem; 
+}
+.main-text {
+  line-height: 1.6;
+  font-size: 1.8rem; 
+
+}
+.boss-qoute {
+  line-height: 1.6;
+}
+/* Input Field Styling */
+.input-field{
+  padding-bottom: 1rem;
+}
+.field {
+  display: flex;
+  align-items: center;
+  background-color: #eff6ff;
+  border-radius: 5px;
+   padding: 1.6rem .8rem;
+  border: 2px solid #dee2e6;
+  color: #333;
+  margin-bottom: .4rem;
+ }
+.field input {
+  padding: .6rem;
+  border: none;
+  background-color: #eff6ff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.input-field small{
+visibility: hidden;
+font-size: 1.4rem;
+}
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  width: 100%;
+  font-size: 1.8rem;
+}
+input::placeholder {
+  color: #1e40af;
+  font-weight: 500;
+  font-size:  1.8rem;
+}
+.field .input-icon {
+  color: #1e40af;
+  margin-left: 1rem;
+  padding-right:  1.2rem;
+  font-size:  1.8rem;
+}
+.verfy-icon{
+   font-size:  2rem;
+display: none;
+margin-right:  1rem ;
+}
+.success .field {
+border-color: #15803d;
+
+}
+.success .success-icon{
+display: block; 
+ color:#15803d ;
+}
+.input-field.error ,.input-field.success{
+   transition: all 0.3s ease;  
+}
+
+.error .field {
+   border-color: #b91c1c;
+}
+.error small{
+visibility: visible; 
+ color:#b91c1c ;
+
+}
+.error .error-icon{
+  display: block; 
+   color:#b91c1c ;
+  }
+.form {
+  background-color: #fff;
+  padding:  3.2rem;
+  border-radius:  11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+ 
+.form-title {
+  margin-bottom:  3.2rem;
+  text-align: center;
+}
+
+.title {
+  font-size:  2.8rem;
+  font-weight: 600;
+  color: #333;
+}
+ 
+.btn-field {
+  margin-top:  1.6rem;
+  text-align: center;
+}
+.btn-field p {
+  color: #333;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.btn-field a {
+  text-decoration: none;
+  color: #1e40af;
+  transition: 0.5s all;
+}
+
+.btn-field a:hover {
+  text-decoration: none;
+  color: #1e3a8a;
+}
+/* Button Styling */
+.my-btn {
+  font-weight: 600;
+  background-color: #1e40af;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding:  1rem  .5rem;
+  border-radius: 5px;
+  margin:  1.2rem 0;
+  font-size:  2rem; /* Increased font size */
+}
+
+.my-btn:hover {
+  background-color: #1e3a8a;
+}
+/* Sign-Up Box Styling */
+.sign-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width:  80rem;
+  border-radius: 11px;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.sign-content {
+  background-color: hsla(226, 71%, 40%, 0.826);
+  padding: 1.6rem;
+  border-radius: 11px;
+  color: #fff;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sign-content p {
+  color: #fff;
+}
+.main-logo {
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.main-logo p {
+  color: #fff;
+}
+
+.main-logo i {
+  margin-right: 0.5rem;
+}
+.boss-message {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1.2rem;
+  border-radius: 9px;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+.boss-img {
+  width: 4rem;
+  border-radius: 50%;
+}
+.boss-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+.info-text p {
+  margin-bottom: 0;
+}
+.boss-name {
+  font-weight: 600;
+}
+.boss-title {
+  font-size: 1.4rem;
+}
+/* Form Check Box Styling */
+.form-check {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .8rem;
+  align-items: center;
+  padding-left: 1.2rem;
+  position: relative;
+ }
+
+.form-check-input {
+  margin-right: 0.5rem;
+  position: relative;
+  appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: transparent;
+  border: 2px solid #1e40af;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-check-input:checked {
+  background-color: #1e40af;
+  border-color: #1e40af;
+}
+
+.form-check-input:focus {
+  outline: none;
+}
+
+.form-check-label {
+  color: #333;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.form-check-label a {
+  color: #1e40af;
+  text-decoration: none;
+}
+
+.form-check-label a:hover {
+  text-decoration: underline !important;
+}
+
+/* NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN */
+ 
+ @media (max-width:768px) {
+  html{
+    font-size: 50%;
+  }
+  body{
+    align-items:start;
+    background-color: #fff;
+  }
+  .sign-box {
+     grid-template-columns: 1fr;
+     border-radius: 0;
+     box-shadow: none;
+  }
+  .form,.sign-content{
+    border-radius: 0;
+  }
+  .sign-content{
+    display: flex;
+    gap: 4rem;
+
+  }
+
+
+
+ }
+
+ 
