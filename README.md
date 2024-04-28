@@ -1,6 +1,6 @@
 #EzWork
 
-EzWorkis a versatile business management solution designed to streamline operations and enhance productivity for businesses of all sizes. This README provides an overview of the application, its features, and how to get started.
+EzWork is a versatile business management solution designed to streamline operations and enhance productivity for businesses of all sizes. This README provides an overview of the application, its features, and how to get started.
 
 ## Features
 
